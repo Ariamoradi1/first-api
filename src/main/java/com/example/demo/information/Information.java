@@ -5,10 +5,19 @@ public class Information {
     private long id;
     private String name;
     private String family;
+    private String email;
     private int age;
 
     public long getId() {
         return id;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setId(String email) {
+        this.email = email;
     }
 
     public void setId(long id) {
@@ -39,11 +48,12 @@ public class Information {
         this.age = age;
     }
 
-    public Information(long id, int age, String family, String name) {
+    public Information(long id, int age, String family, String name, String email) {
         this.id = id;
         this.age = age;
         this.family = family;
         this.name = name;
+        this.email = email;
     }
 
     @Override
@@ -51,6 +61,7 @@ public class Information {
         return "Profile{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
                 ", family='" + family + '\'' +
                 ", age=" + age +
                 '}';

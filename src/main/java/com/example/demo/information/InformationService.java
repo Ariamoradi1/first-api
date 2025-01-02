@@ -14,7 +14,8 @@ public class InformationService {
                         12345,
                         21,
                         "moradi",
-                        "aria"
+                        "aria",
+                        "ariaman1381@gmail.com"
                 )
         );
     }
