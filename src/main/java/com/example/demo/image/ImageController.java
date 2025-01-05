@@ -17,7 +17,7 @@ public class ImageController {
     }
 
     @GetMapping
-    public List<Image> getImage() {
+    public Image getImage() {
         return this.imageService.getImage();
     }
 }
